@@ -1,0 +1,21 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "Вёрстка бесплатного макета",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psywalker/WebProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psywalker/WebProject/issues"
+  },
+  "homepage": "https://github.com/psywalker/WebProject#readme"
+}
