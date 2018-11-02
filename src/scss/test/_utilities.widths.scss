@@ -1,9 +1,8 @@
-@import "true";
 @import "../utilities/utilities.widths";
 
 
 
-@include test-module("[mixin] widths") {
+/*@include test-module("[mixin] widths") {
 
   @include test("it should output fractional width classes for a given set of denominations") {
 
@@ -23,4 +22,4 @@
       }
     }
   }
-}
+}*/

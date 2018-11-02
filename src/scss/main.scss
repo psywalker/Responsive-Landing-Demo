@@ -74,13 +74,11 @@
  * Hide.................Helper classes to hide content
  */
 
+
 // SETTINGS
 @import "settings/example.settings.config";
 @import "settings/settings.core";
 @import "settings/example.settings.global";
-
-
-
 
 
 // TOOLS
@@ -88,8 +86,6 @@
 @import "tools/tools.clearfix";
 @import "tools/tools.hidden";
 @import "node_modules/sass-mq/mq";
-
-
 
 
 
@@ -110,6 +106,10 @@
 @import "elements/elements.tables";
 
 
+body{
+  width: 10px;
+  background: red;
+}
 
 
 
@@ -137,9 +137,7 @@
 //
 // Build and include your project’s UI components here.
 @import "components/example.components.buttons";
-
-
-
+@import "components/site-header";
 
 
 // UTILITIES

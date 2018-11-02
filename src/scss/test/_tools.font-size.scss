@@ -1,10 +1,9 @@
-@import "true";
 @import "../settings/settings.core";
 @import "../tools/tools.font-size";
 
 
 
-@include test-module("[mixin] inuit-font-size") {
+/*@include test-module("[mixin] inuit-font-size") {
 
   @include test("it should output a font-size and line-height based on a given input") {
 
@@ -87,3 +86,4 @@
   }
 }
 
+*/
