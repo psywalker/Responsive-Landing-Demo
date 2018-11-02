@@ -1548,11 +1548,8 @@ table {
   padding: 50px 112px; }
 
 .header__main {
-
   background: url("../../dist/img/head-bg.jpg") no-repeat;
-  background-size: cover; 
-}
-
+  background-size: cover; }
 
 .logo {
   margin-right: auto; }
