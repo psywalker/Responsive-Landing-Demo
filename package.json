@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/psywalker/WebProject.git"
+    "url": "git+https://github.com/psywalker/Responsive-Landing-Demo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/psywalker/WebProject/issues"
+    "url": "https://github.com/psywalker/Responsive-Landing-Demo/issues"
   },
-  "homepage": "https://github.com/psywalker/WebProject#readme",
+  "homepage": "https://github.com/psywalker/Responsive-Landing-Demo#readme",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2"
