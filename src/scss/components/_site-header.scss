@@ -4,14 +4,28 @@
     padding: 50px 112px;
   }
   &__title {
-
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 3px;
+    text-align: center;
   }
   &__subtitle {
-
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1.1px;
+    text-align: center;
   }
   &__main {
     background: url("../../dist/img/head-bg.jpg") no-repeat;
     background-size: cover;
+  }
+  &__btns {
+    text-align: center;
+    margin-top: 108px;
   }
 }
 
@@ -27,6 +41,7 @@
 .nav {
   &-list {
     display: flex;
+    margin: 0;
     &__item {
       margin-left: 56px;
       &:first-child {

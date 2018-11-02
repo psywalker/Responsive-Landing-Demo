@@ -1547,9 +1547,29 @@ table {
   display: flex;
   padding: 50px 112px; }
 
+.header__title {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 3px;
+  text-align: center; }
+
+.header__subtitle {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  text-align: center; }
+
 .header__main {
   background: url("../../dist/img/head-bg.jpg") no-repeat;
   background-size: cover; }
+
+.header__btns {
+  text-align: center;
+  margin-top: 108px; }
 
 .logo {
   margin-right: auto; }
@@ -1559,7 +1579,8 @@ table {
     height: 24px; }
 
 .nav-list {
-  display: flex; }
+  display: flex;
+  margin: 0; }
   .nav-list__item {
     margin-left: 56px; }
     .nav-list__item:first-child {
