@@ -1,4 +1,4 @@
-.header {
+.side-header {
   &__top {
     display: flex;
     padding: 50px 112px;
@@ -26,50 +26,6 @@
   &__btns {
     text-align: center;
     margin-top: 108px;
+    
   }
-}
-
-.logo {
-  margin-right: auto;
-  &__img {
-    display: block;
-    width: 124px;
-    height: 24px;
-  }
-}
-
-.nav {
-  &-list {
-    display: flex;
-    margin: 0;
-    &__item {
-      margin-left: 56px;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-    &__link {
-      color: #212121;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 22px;
-      letter-spacing: 1px;
-    }
-  }
-}
-
-.search {
-  position: relative;
-  margin-left: 28px;
-  &__input {
-
-  }
-  &__btn {
-
-  }
-}
-
-.section-wrapper {
-  padding: 128px 118px;
 }

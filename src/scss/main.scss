@@ -135,7 +135,10 @@ body {
 @import "components/example.components.buttons";
 @import "components/site-header";
 @import "components/buttons";
-
+@import "components/logo";
+@import "components/nav";
+@import "components/section-wrapper";
+@import "components/search";
 
 // UTILITIES
 @import "utilities/utilities.clearfix";

@@ -8,5 +8,5 @@ gulp.task('default', function() {
 })
 
 gulp.task('watch', function(){
-    gulp.watch('src/scss/**/main.scss', ['default']);
+    gulp.watch('src/scss/**/*.scss', ['default']);
 })
