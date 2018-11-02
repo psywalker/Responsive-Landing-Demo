@@ -71,6 +71,10 @@
  * Print................Reset-like styles taken from the HTML5 Boilerplate.
  * Hide.................Helper classes to hide content
  */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
 /* ==========================================================================
    #BOX-SIZING
    ========================================================================== */
@@ -637,10 +641,6 @@ img[height] {
 table {
   width: 100%;
   /* [1] */ }
-
-body {
-  width: 10px;
-  background: red; }
 
 /* ==========================================================================
    #WRAPPER
@@ -1543,9 +1543,57 @@ body {
     .c-btn--ghost.c-btn--tertiary:hover, .c-btn--ghost.c-btn--tertiary:focus {
       color: #fff; }
 
-body {
-  background: red;
-  background: red; }
+.header__top {
+  display: flex;
+  padding: 50px 112px; }
+
+.header__main {
+  background: url("../../dist/img/head-bg.jpg") no-repeat;
+  background-size: cover; }
+
+.logo {
+  margin-right: auto; }
+  .logo__img {
+    display: block;
+    width: 124px;
+    height: 24px; }
+
+.nav-list {
+  display: flex; }
+  .nav-list__item {
+    margin-left: 56px; }
+    .nav-list__item:first-child {
+      margin-left: 0; }
+  .nav-list__link {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px; }
+
+.search {
+  position: relative;
+  margin-left: 28px; }
+
+.section-wrapper {
+  padding: 128px 118px; }
+
+.button {
+  padding: 28px 46px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  transition: all .3s; }
+  .button:hover {
+    background-color: #00897b;
+    border-color: #00897b; }
 
 /* ==========================================================================
    #CLEARFIX
