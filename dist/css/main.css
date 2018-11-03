@@ -559,9 +559,9 @@ dd, ol, ul {
  * 3. Ensure the page always fills at least the entire height of the viewport.
  */
 html {
-  font-size: 1em;
+  font-size: 0.9375em;
   /* [1] */
-  line-height: 1.5;
+  line-height: 1.6;
   /* [1] */
   overflow-y: scroll;
   /* [2] */
@@ -578,32 +578,32 @@ html {
  */
 h1 {
   font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 2.4rem;
   line-height: 1.16667; }
 
 h2 {
   font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 1.86667rem;
   line-height: 1.28571; }
 
 h3 {
   font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.25; }
 
 h4 {
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.33333rem;
   line-height: 1.5; }
 
 h5 {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   line-height: 1.33333; }
 
 h6 {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.06667rem;
   line-height: 1.5; }
 
 /* ==========================================================================
@@ -752,7 +752,7 @@ table {
   /* [4] */
   padding-left: 24px;
   /* [5] */
-  font-size: 16px;
+  font-size: 15px;
   /* [6] */
   font-size: 1rem; }
 
@@ -1545,11 +1545,13 @@ table {
 
 .side-header__top {
   display: flex;
-  padding: 50px 112px; }
+  padding: 35px 112px; }
 
 .side-header__title {
   color: #ffffff;
   font-size: 60px;
+  font-size: 4rem;
+  line-height: 1.1;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: 3px;
@@ -1558,24 +1560,42 @@ table {
 .side-header__subtitle {
   color: #ffffff;
   font-size: 22px;
+  font-size: 1.46667rem;
+  line-height: 1.36364;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 1.1px;
   text-align: center; }
 
 .side-header__main {
-  background: url("../../dist/img/head-bg.jpg") no-repeat;
-  background-size: cover; }
+  padding: 180px 0 76px;
+  background: url("../../dist/img/head-bg.jpg") no-repeat center top/cover; }
 
-.side-header__btns {
+.side-header__btn-group {
   text-align: center;
   margin-top: 108px; }
+  .side-header__btn-group .button {
+    margin-left: 28px; }
+    .side-header__btn-group .button:first-child {
+      margin-left: 0; }
+
+.side-header__arrow-down {
+  display: block;
+  border: none;
+  width: 23px;
+  height: 15px;
+  margin: 100px auto 0;
+  cursor: pointer;
+  background: url("../../dist/img/header-arrow.png") left top no-repeat; }
 
 .button {
+  display: inline-block;
   padding: 28px 46px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  font-size: 1.33333rem;
+  line-height: 1.5;
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
@@ -1592,7 +1612,20 @@ table {
   .logo__img {
     display: block;
     width: 124px;
-    height: 24px; }
+    height: 26px; }
+
+.nav-list__item {
+  margin-left: 56px; }
+  .nav-list__item:first-child {
+    margin-left: 0; }
+
+.nav-list__link {
+  color: #212121;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px; }
 
 .section-wrapper {
   padding: 128px 118px; }
@@ -2864,32 +2897,32 @@ table {
  */
 .u-h1 {
   font-size: 36px !important;
-  font-size: 2.25rem !important;
+  font-size: 2.4rem !important;
   line-height: 1.16667 !important; }
 
 .u-h2 {
   font-size: 28px !important;
-  font-size: 1.75rem !important;
+  font-size: 1.86667rem !important;
   line-height: 1.28571 !important; }
 
 .u-h3 {
   font-size: 24px !important;
-  font-size: 1.5rem !important;
+  font-size: 1.6rem !important;
   line-height: 1.25 !important; }
 
 .u-h4 {
   font-size: 20px !important;
-  font-size: 1.25rem !important;
+  font-size: 1.33333rem !important;
   line-height: 1.5 !important; }
 
 .u-h5 {
   font-size: 18px !important;
-  font-size: 1.125rem !important;
+  font-size: 1.2rem !important;
   line-height: 1.33333 !important; }
 
 .u-h6 {
   font-size: 16px !important;
-  font-size: 1rem !important;
+  font-size: 1.06667rem !important;
   line-height: 1.5 !important; }
 
 /* ==========================================================================

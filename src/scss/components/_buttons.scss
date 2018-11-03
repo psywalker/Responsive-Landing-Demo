@@ -1,8 +1,9 @@
 .button {
+  display: inline-block;
   padding: 28px 46px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  @include inuit-font-size(20px);
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
