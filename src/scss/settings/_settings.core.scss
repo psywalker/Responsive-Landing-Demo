@@ -10,7 +10,12 @@
 
 // Baseline grid lines height.
 // Every spacing metric should be based on this.
-
+/*$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+); */
 $inuit-global-baseline:     6px !default;
 
 

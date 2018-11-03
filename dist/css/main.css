@@ -71,11 +71,16 @@
  * Print................Reset-like styles taken from the HTML5 Boilerplate.
  * Hide.................Helper classes to hide content
  */
-@import url("font-awesome/scss/font-awesome.scss");
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
 
+/*$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+); */
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -2257,8 +2262,7 @@ table {
   padding: 0 20px;
   max-width: 1170px;
   box-sizing: border-box;
-  margin: 35px auto;
-  position: relative; }
+  margin: 35px auto; }
 
 .side-header__title {
   color: #ffffff;
@@ -2266,9 +2270,13 @@ table {
   font-size: 4rem;
   line-height: 1.1;
   font-weight: 400;
-  line-height: 60px;
   letter-spacing: 3px;
   text-align: center; }
+  @media (min-width: 20em) and (max-width: 61.24em) {
+    .side-header__title {
+      font-size: 40px;
+      font-size: 2.66667rem;
+      line-height: 1.2; } }
 
 .side-header__subtitle {
   color: #ffffff;
@@ -2276,21 +2284,45 @@ table {
   font-size: 1.46667rem;
   line-height: 1.36364;
   font-weight: 400;
-  line-height: 22px;
   letter-spacing: 1.1px;
   text-align: center; }
+  @media (min-width: 20em) and (max-width: 61.24em) {
+    .side-header__subtitle {
+      font-size: 16px;
+      font-size: 1.06667rem;
+      line-height: 1.5; } }
 
 .side-header__main {
-  padding: 180px 0 76px;
-  background: url("../../dist/img/head-bg.jpg") no-repeat center top/cover; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../../dist/img/head-bg.jpg") no-repeat center top/cover;
+  background-attachment: fixed;
+  height: calc(100vh - 95px);
+  box-sizing: border-box;
+  min-height: 550px; }
+  @media (min-width: 20em) and (max-width: 61.24em) {
+    .side-header__main {
+      min-height: 550px; } }
 
 .side-header__btn-group {
   text-align: center;
   margin-top: 108px; }
-  .side-header__btn-group .button {
-    margin-left: 28px; }
-    .side-header__btn-group .button:first-child {
-      margin-left: 0; }
+  @media (min-width: 20em) and (max-width: 61.24em) {
+    .side-header__btn-group {
+      margin-top: 40px; } }
+  @media (min-width: 20em) and (max-width: 46.24em) {
+    .side-header__btn-group {
+      margin: 30px auto 0; } }
+  @media (min-width: 46.25em) {
+    .side-header__btn-group .button {
+      margin-left: 28px; } }
+  .side-header__btn-group .button:first-child {
+    margin-left: 0; }
+  @media (min-width: 20em) and (max-width: 46.24em) {
+    .side-header__btn-group .button {
+      margin-left: 0px; } }
 
 .side-header__arrow-down {
   display: block;
@@ -2300,6 +2332,9 @@ table {
   margin: 100px auto 0;
   cursor: pointer;
   background: url("../../dist/img/header-arrow.png") left top no-repeat; }
+  @media (min-width: 20em) and (max-width: 61.24em) {
+    .side-header__arrow-down {
+      margin: 50px auto 0; } }
 
 .button {
   display: inline-block;
@@ -2315,10 +2350,19 @@ table {
   text-decoration: none;
   letter-spacing: 1px;
   border: 1px solid #fff;
-  transition: all .3s; }
+  transition: all .3s;
+  white-space: nowrap; }
   .button:hover {
     background-color: #00897b;
     border-color: #00897b; }
+  @media (min-width: 20em) and (max-width: 46.24em) {
+    .button {
+      font-size: 15px;
+      font-size: 1rem;
+      line-height: 1.6;
+      padding: 20px 36px;
+      width: calc(100% - 40px);
+      margin-bottom: 10px; } }
 
 .logo {
   margin-right: auto;

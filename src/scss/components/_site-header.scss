@@ -6,37 +6,61 @@
     max-width: 1170px;
     box-sizing: border-box;
     margin: 35px auto;
-    position: relative;
   }
   &__title {
     color: #ffffff;
     @include inuit-font-size(60px);
     font-weight: 400;
-    line-height: 60px;
     letter-spacing: 3px;
     text-align: center;
+    @include mq($from: mobile, $until: desktop) {
+      @include inuit-font-size(40px);
+    }
   }
   &__subtitle {
     color: #ffffff;
     @include inuit-font-size(22px);
     font-weight: 400;
-    line-height: 22px;
     letter-spacing: 1.1px;
     text-align: center;
+    @include mq($from: mobile, $until: desktop) {
+      @include inuit-font-size(16px);
+    }
   }
   &__main {
-    padding: 180px 0 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: url("../../dist/img/head-bg.jpg") no-repeat center top / cover;
+    background-attachment: fixed;
+    height: calc(100vh - 95px);
+    box-sizing: border-box;
+    min-height: 550px;
+    @include mq($from: mobile, $until: desktop) {
+      min-height: 550px;
+    }
   }
   &__btn-group {
     text-align: center;
     margin-top: 108px;
+    @include mq($from: mobile, $until: desktop) {
+     margin-top: 40px;
+    }
+    @include mq($from: mobile, $until: tablet) {
+      margin: 30px auto 0;
+    }
 
     & .button {
-      margin-left: 28px;
+      @include mq($from: tablet) {
+        margin-left: 28px;
+      }
       &:first-child {
         margin-left: 0;
       } 
+      @include mq($from: mobile, $until: tablet) {
+        margin-left: 0px;
+      }
     }
   }
 
@@ -48,5 +72,8 @@
     margin: 100px auto 0;
     cursor: pointer;
     background: url("../../dist/img/header-arrow.png") left top no-repeat;
+    @include mq($from: mobile, $until: desktop) {
+      margin: 50px auto 0;
+    }
   }
 }
