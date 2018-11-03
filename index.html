@@ -20,7 +20,12 @@
         <img src="dist/img/logo.png" class="logo__img" alt="Responsive-Landing-Demo">
       </a>
       <nav class="nav">
-        <ul class="nav-list o-list-inline">
+        <button class="hamburger hamburger--collapse" type="button" id="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <ul class="nav-list o-list-inline" id="nav-list">
           <li class="nav-list__item">
             <a href="#" class="nav-list__link">Home</a>
           </li>
@@ -41,9 +46,9 @@
           </li>
         </ul>
       </nav>
-      <form action="" class="search">
-        <button class="search__btn fas fa-search"></button>
-        <input type="search" class="search__input">
+      <form action="" class="search" id="search">
+        <button class="search__btn fas fa-search" type="submit" id="search__btn"></button>
+        <input type="search" class="search__input" id="search__input">
       </form>
     </div>
     <div class="side-header__main">
@@ -64,5 +69,6 @@
       f
     </div>
   </section>
+  <script src="dist/js/js.js"></script>
 </body>
 </html>

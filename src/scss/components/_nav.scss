@@ -1,22 +1,50 @@
 .nav {
-    &-list {
-      &__item {
-        margin-left: 28px;
-        &:first-child {
-          margin-left: 0;
-        }
+  position: relative;
+  &-list {
+    @include mq($from: mobile, $until: desktop) {
+      display: none;
+    }
+    &_state-active {
+      position: absolute;
+      top: 50px;
+      left: -100px;
+      display: block;
+
+    }
+    &__item {
+      margin-left: 28px;
+      &:first-child {
+        margin-left: 0;
       }
-      &__link {
-        color: #212121;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 22px;
-        letter-spacing: 1px;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
+      @include mq($from: mobile, $until: desktop) {
+        margin-left: 0px;
+        margin-bottom: 3px;
+      }
+    }
+    &__link {
+      color: #212121;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      @include mq($from: mobile, $until: desktop) {
+        color: #fff;
       }
     }
   }
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -27px;
+  @include mq($from: mobile, $until: desktop) {
+    display: block;
+  }
+}
