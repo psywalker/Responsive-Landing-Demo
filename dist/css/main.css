@@ -71,6 +71,7 @@
  * Print................Reset-like styles taken from the HTML5 Boilerplate.
  * Hide.................Helper classes to hide content
  */
+@import url("font-awesome/scss/font-awesome.scss");
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
@@ -1085,7 +1086,8 @@ table {
  */
 .o-list-bare {
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+  display: flex; }
 
 .o-list-bare__item {
   margin-left: 0; }
@@ -1098,10 +1100,9 @@ table {
  */
 .o-list-inline {
   margin-left: 0;
-  list-style: none; }
-
-.o-list-inline__item {
-  display: inline-block; }
+  list-style: none;
+  display: flex;
+  margin: 0; }
 
 /* ==========================================================================
    #BOX
@@ -1545,7 +1546,9 @@ table {
 
 .side-header__top {
   display: flex;
-  padding: 35px 112px; }
+  align-items: center;
+  max-width: 1170px;
+  margin: 35px auto; }
 
 .side-header__title {
   color: #ffffff;
@@ -1608,14 +1611,15 @@ table {
     border-color: #00897b; }
 
 .logo {
-  margin-right: auto; }
+  margin-right: auto;
+  display: block;
+  min-width: 124px;
+  height: 24px; }
   .logo__img {
-    display: block;
-    width: 124px;
-    height: 26px; }
+    display: block; }
 
 .nav-list__item {
-  margin-left: 56px; }
+  margin-left: 28px; }
   .nav-list__item:first-child {
     margin-left: 0; }
 
@@ -1625,14 +1629,40 @@ table {
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-decoration: none; }
+  .nav-list__link:hover {
+    text-decoration: underline; }
 
-.section-wrapper {
-  padding: 128px 118px; }
+.site-section-wrapper {
+  margin: 128px auto;
+  max-width: 1170px; }
 
 .search {
   position: relative;
-  margin-left: 28px; }
+  margin-left: 28px;
+  display: flex; }
+  .search__input {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 0;
+    overflow: hidden;
+    border: none;
+    transition: .3s all; }
+  .search__btn {
+    transition: .3s all;
+    width: 19px;
+    height: 19px;
+    border: none;
+    cursor: pointer;
+    border: none;
+    background: none; }
+    .search__btn:focus + input {
+      border: 1px solid #000;
+      width: 100px; }
 
 /* ==========================================================================
    #CLEARFIX

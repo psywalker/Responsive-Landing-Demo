@@ -1,7 +1,9 @@
 .side-header {
   &__top {
     display: flex;
-    padding: 35px 112px;
+    align-items: center;
+    max-width: 1170px;
+    margin: 35px auto;
   }
   &__title {
     color: #ffffff;
