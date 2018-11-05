@@ -1,9 +1,7 @@
 .button {
   display: inline-block;
-  padding: 28px 46px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  @include inuit-font-size(20px);
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
@@ -12,14 +10,17 @@
   border: 1px solid #fff;
   transition: all .3s;
   white-space: nowrap;
+  @include inuit-font-size(15px);
+  padding: 20px 36px;
+  width: calc(100% - 40px);
+  margin-bottom: 10px;
   &:hover {
     background-color: #00897b;
     border-color: #00897b;
   }
-  @include mq($from: mobile, $until: tablet) {
-    @include inuit-font-size(15px);
-    padding: 20px 36px;
-    width: calc(100% - 40px);
-    margin-bottom: 10px;
+  @include mq($from: tablet) {
+    padding: 28px 46px;
+    @include inuit-font-size(20px);
+    width: auto;
    }
 }

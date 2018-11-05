@@ -1,18 +1,27 @@
 .nav {
   position: relative;
   &-list {
-    @include mq($from: mobile, $until: desktop) {
-      display: none;
+    display: none;
+    background: #fff;
+    padding: 10px;
+    @include mq($from: desktop) {
+      display: flex;
+      background: none;
+      padding: 0px;
     }
     &_state-active {
       position: absolute;
       top: 50px;
       left: -100px;
       display: block;
-
     }
     &__item {
-      margin-left: 28px;
+      background: #fff;
+      width: 130px;
+      @include mq($from: desktop) {
+        margin-left: 28px;
+        background: none;
+      }
       &:first-child {
         margin-left: 0;
       }
@@ -33,18 +42,17 @@
         text-decoration: underline;
       }
       @include mq($from: mobile, $until: desktop) {
-        color: #fff;
+        color: #212121;
       }
     }
   }
 }
 
 .hamburger {
-  display: none;
   position: absolute;
   right: 0;
   top: -27px;
-  @include mq($from: mobile, $until: desktop) {
-    display: block;
+  @include mq($from: desktop) {
+    display: none;
   }
 }

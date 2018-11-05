@@ -90,6 +90,7 @@ body {
 @import "tools/tools.hidden";
 @import "node_modules/sass-mq/mq";
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import "node_modules/inuit-flexgrid/objects/objects.grid";
 
 
 // GENERIC
@@ -139,6 +140,7 @@ body {
 @import "components/nav";
 @import "components/site-section-wrapper";
 @import "components/search";
+@import "components/about-list";
 
 // UTILITIES
 @import "utilities/utilities.clearfix";

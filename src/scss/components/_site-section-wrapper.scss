@@ -1,4 +1,30 @@
 .site-section-wrapper {
-  margin: 128px auto;
+  margin: 68px auto;
   max-width: 1170px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  @include mq($from: tablet) {
+    margin: 128px auto;
+  }
+}
+
+.site-section__title {
+  color: #212121;
+  @include inuit-font-size(30px);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.site-section__subtitle {
+  color: #212121;
+  font-family: "Open Sans";
+  @include inuit-font-size(15px);
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  margin: 30px auto 64px;
+  text-align: center;
+  max-width: 620px;
+  @include mq($from: tablet) {
+    margin: 30px auto 124px;
+  }
 }
