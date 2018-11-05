@@ -14,6 +14,7 @@
   padding: 20px 36px;
   width: calc(100% - 40px);
   margin-bottom: 10px;
+  cursor: pointer;
   &:hover {
     background-color: #00897b;
     border-color: #00897b;
@@ -22,5 +23,25 @@
     padding: 28px 46px;
     @include inuit-font-size(20px);
     width: auto;
-   }
+  }
+
+  &.services-list__btn {
+    display: block;
+    @include inuit-font-size(20px);
+    border-color: #000;
+    background: none;
+    color: #000;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+    color: #212121;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
 }

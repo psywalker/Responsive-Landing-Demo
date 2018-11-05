@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function(){
     $(".side-header__arrow-down").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#section-about").offset().top
-        }, 2000);
+        }, 300);
     });
 })

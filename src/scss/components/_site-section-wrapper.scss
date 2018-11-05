@@ -1,10 +1,16 @@
+.site-section {
+  &_type_services {
+    background: #e4fdf9;
+  }
+}
+
 .site-section-wrapper {
-  margin: 68px auto;
+  margin: 0 auto;
   max-width: 1170px;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 68px 20px;
   @include mq($from: tablet) {
-    margin: 128px auto;
+    padding: 128px 20px;
   }
 }
 
