@@ -2543,7 +2543,6 @@ table {
   font-size: 1rem;
   line-height: 1.6;
   padding: 20px 36px;
-  width: calc(100% - 40px);
   margin-bottom: 10px;
   cursor: pointer; }
   .button:hover {
@@ -2556,6 +2555,42 @@ table {
       font-size: 1.33333rem;
       line-height: 1.5;
       width: auto; } }
+  .button.button_size_big {
+    width: calc(100% - 40px); }
+    @media (min-width: 46.25em) {
+      .button.button_size_big {
+        padding: 28px 46px;
+        font-size: 20px;
+        font-size: 1.33333rem;
+        line-height: 1.5;
+        width: auto; } }
+  .button.button_type_black {
+    border-color: #212121;
+    color: #212121; }
+  .button.button_type_green {
+    border: 2px solid #00897b;
+    color: #212121;
+    background: none; }
+    .button.button_type_green:hover {
+      background-color: #00897b;
+      color: #fff; }
+  .button.button_type_green2 {
+    border: 2px solid #00897b;
+    background-color: #00897b;
+    color: #fff;
+    padding: 15px 60px; }
+    .button.button_type_green2:hover {
+      color: #212121;
+      background: none; }
+  .button.button_size_small {
+    font-size: 20px;
+    font-size: 1.33333rem;
+    line-height: 1.5;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 15px; }
   .button.services-list__btn {
     display: block;
     font-size: 20px;
@@ -2765,6 +2800,79 @@ table {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.75px; }
+
+.works__btn-group {
+  text-align: center; }
+  .works__btn-group .button {
+    margin-left: 0px; }
+    .works__btn-group .button:first-child {
+      margin-left: 0; }
+    @media (min-width: 46.25em) {
+      .works__btn-group .button {
+        margin-left: 20px; } }
+
+.works__btn-bottom {
+  text-align: center; }
+
+.works-list {
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px; }
+  @media (min-width: 46.25em) {
+    .works-list {
+      margin-top: 120px;
+      margin-bottom: 90px; } }
+  .works-list__item {
+    min-width: 300px;
+    margin-bottom: 45px; }
+    .works-list__item .works-list-item__inner {
+      position: relative;
+      background: #fff; }
+  .works-list__img {
+    width: 100%; }
+  .works-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    position: relative; }
+    .works-list__link::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.4);
+      transition: all .3s; }
+    .works-list__link:hover .works-list__title,
+    .works-list__link:hover .works-list__desc {
+      display: block; }
+    .works-list__link:hover::after {
+      opacity: 1; }
+  .works-list__title {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 20px;
+    font-size: 1.33333rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: none; }
+  .works-list__desc {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    display: none;
+    margin-top: 20px; }
 
 /* ==========================================================================
    #CLEARFIX

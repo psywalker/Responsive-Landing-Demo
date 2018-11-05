@@ -12,7 +12,6 @@
   white-space: nowrap;
   @include inuit-font-size(15px);
   padding: 20px 36px;
-  width: calc(100% - 40px);
   margin-bottom: 10px;
   cursor: pointer;
   &:hover {
@@ -24,7 +23,46 @@
     @include inuit-font-size(20px);
     width: auto;
   }
-
+  &.button_size_big {
+    width: calc(100% - 40px);
+    @include mq($from: tablet) {
+      padding: 28px 46px;
+      @include inuit-font-size(20px);
+      width: auto;
+    }
+  }
+  &.button_type_black {
+    border-color: #212121;
+    color: #212121;
+  }
+  &.button_type_green {
+    border: 2px solid #00897b;
+    color: #212121;
+    background: none;
+    
+    &:hover {
+      background-color: #00897b;
+      color: #fff;
+    }
+  }
+  &.button_type_green2 {
+    border: 2px solid #00897b;
+    background-color: #00897b;
+    color: #fff;
+    padding: 15px 60px;
+    &:hover {
+      color: #212121;
+      background: none;
+    }
+  }
+  &.button_size_small {
+    @include inuit-font-size(20px);
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+  }
   &.services-list__btn {
     display: block;
     @include inuit-font-size(20px);
