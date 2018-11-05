@@ -2586,7 +2586,8 @@ table {
       @media (min-width: 61.25em) {
         .nav-list__item {
           margin-left: 28px;
-          background: none; } }
+          background: none;
+          width: auto; } }
       .nav-list__item:first-child {
         margin-left: 0; }
       @media (min-width: 20em) and (max-width: 61.24em) {

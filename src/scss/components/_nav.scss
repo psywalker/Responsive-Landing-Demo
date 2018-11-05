@@ -21,6 +21,7 @@
       @include mq($from: desktop) {
         margin-left: 28px;
         background: none;
+        width: auto;
       }
       &:first-child {
         margin-left: 0;
