@@ -9,7 +9,7 @@
         margin: 0 auto;
     }
     &__title {
-        color: #212121;
+        color: $inuit-color;
         @include inuit-font-size(20px);
         font-weight: 400;
         letter-spacing: 1px;
@@ -20,14 +20,10 @@
         max-width: 254px;
         margin: 0 auto;
         text-align: center;
-        color: #212121;
+        color: $inuit-color;
         @include inuit-font-size(15px);
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 0.75px;
     }
-}
-
-.about-list-item__inner {
-    
 }

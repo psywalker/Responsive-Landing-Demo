@@ -15,14 +15,14 @@
 }
 
 .site-section__title {
-  color: #212121;
+  color: $inuit-color;
   @include inuit-font-size(30px);
   font-weight: 700;
   letter-spacing: 1.5px;
   text-align: center;
 }
 .site-section__subtitle {
-  color: #212121;
+  color: $inuit-color;
   font-family: "Open Sans";
   @include inuit-font-size(15px);
   font-weight: 400;

@@ -55,20 +55,18 @@
     @include mq($from: mobile, $until: tablet) {
       margin: 30px auto 0;
     }
-
-    & .button {
-      @include mq($from: tablet) {
-        margin-left: 28px;
-      }
-      &:first-child {
-        margin-left: 0;
-      } 
-      @include mq($from: mobile, $until: tablet) {
-        margin-left: 0px;
-      }
+  }
+  &__btn {
+    @include mq($from: tablet) {
+      margin-left: 28px;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    @include mq($from: mobile, $until: tablet) {
+      margin-left: 0px;
     }
   }
-
   &__arrow-down {
     display: block;
     border: none;
