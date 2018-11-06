@@ -1,2 +1,2 @@
-# WebProject
-Вёрстка бесплатного макета
+# Responsive-Landing-Demo
+Building layout
