@@ -16,6 +16,11 @@
   display: flex;
 }
 
+.o-list-bare-without-flex {
+  list-style: none;
+  margin-left: 0;
+}
+
   .o-list-bare__item {
     margin-left: 0;
   }

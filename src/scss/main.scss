@@ -125,7 +125,7 @@ body {
 @import "objects/objects.crop";
 @import "objects/objects.table";
 @import "objects/objects.pack";
-
+@import "objects/object.overlay";
 
 
 
@@ -138,11 +138,18 @@ body {
 @import "components/buttons";
 @import "components/logo";
 @import "components/nav";
+@import "components/site-section";
 @import "components/site-section-wrapper";
 @import "components/search";
 @import "components/about-list";
 @import "components/services-list";
+@import "components/services-card";
 @import "components/works";
+@import "components/works-list";
+@import "components/hamburger";
+@import "components/pricing-card";
+@import "components/pricing-list";
+@import "components/list-pricing-card";
 
 // UTILITIES
 @import "utilities/utilities.clearfix";

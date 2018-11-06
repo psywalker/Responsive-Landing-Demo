@@ -32,7 +32,7 @@
       }
     }
     &__link {
-      color: #212121;
+      color: $inuit-color;
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
       font-weight: 400;
@@ -43,7 +43,7 @@
         text-decoration: underline;
       }
       @include mq($from: mobile, $until: desktop) {
-        color: #212121;
+        color: $inuit-color;
       }
     }
   }

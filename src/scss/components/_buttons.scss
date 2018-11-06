@@ -32,12 +32,12 @@
     }
   }
   &.button_type_black {
-    border-color: #212121;
-    color: #212121;
+    border-color: $inuit-color;
+    color: $inuit-color;
   }
   &.button_type_green {
     border: 2px solid #00897b;
-    color: #212121;
+    color: $inuit-color;
     background: none;
     
     &:hover {
@@ -51,7 +51,17 @@
     color: #fff;
     padding: 15px 60px;
     &:hover {
-      color: #212121;
+      color: $inuit-color;
+      background: none;
+    }
+  }
+  &.button_type_green3 {
+    border: 2px solid #00897b;
+    background-color: #00897b;
+    color: #fff;
+    padding: 15px 20px;
+    &:hover {
+      color: $inuit-color;
       background: none;
     }
   }
@@ -63,17 +73,16 @@
     letter-spacing: 1px;
     padding: 15px 15px;
   }
-  &.services-list__btn {
+  &.services-card__btn {
     display: block;
     @include inuit-font-size(20px);
     border-color: #000;
     background: none;
-    color: #000;
     width: 150px;
     padding: 10px 0;
     text-align: center;
     margin: 0 auto;
-    color: #212121;
+    color: $inuit-color;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;

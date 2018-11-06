@@ -1984,6 +1984,10 @@ table {
   margin-left: 0;
   display: flex; }
 
+.o-list-bare-without-flex {
+  list-style: none;
+  margin-left: 0; }
+
 .o-list-bare__item {
   margin-left: 0; }
 
@@ -2344,6 +2348,20 @@ table {
   .o-pack--reverse > .o-pack__item {
     direction: ltr; }
 
+.o-overlay::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all .3s; }
+
+.o-overlay:hover {
+  opacity: 1; }
+
 /* ==========================================================================
    #BUTTONS
    ========================================================================== */
@@ -2503,14 +2521,17 @@ table {
   @media (min-width: 20em) and (max-width: 46.24em) {
     .side-header__btn-group {
       margin: 30px auto 0; } }
-  @media (min-width: 46.25em) {
-    .side-header__btn-group .button {
-      margin-left: 28px; } }
-  .side-header__btn-group .button:first-child {
-    margin-left: 0; }
-  @media (min-width: 20em) and (max-width: 46.24em) {
-    .side-header__btn-group .button {
-      margin-left: 0px; } }
+
+@media (min-width: 46.25em) {
+  .side-header__btn {
+    margin-left: 28px; } }
+
+.side-header__btn:first-child {
+  margin-left: 0; }
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .side-header__btn {
+    margin-left: 0px; } }
 
 .side-header__arrow-down {
   display: block;
@@ -2582,6 +2603,14 @@ table {
     .button.button_type_green2:hover {
       color: #212121;
       background: none; }
+  .button.button_type_green3 {
+    border: 2px solid #00897b;
+    background-color: #00897b;
+    color: #fff;
+    padding: 15px 20px; }
+    .button.button_type_green3:hover {
+      color: #212121;
+      background: none; }
   .button.button_size_small {
     font-size: 20px;
     font-size: 1.33333rem;
@@ -2591,14 +2620,13 @@ table {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 15px 15px; }
-  .button.services-list__btn {
+  .button.services-card__btn {
     display: block;
     font-size: 20px;
     font-size: 1.33333rem;
     line-height: 1.5;
     border-color: #000;
     background: none;
-    color: #000;
     width: 150px;
     padding: 10px 0;
     text-align: center;
@@ -2607,7 +2635,7 @@ table {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    .button.services-list__btn:hover {
+    .button.services-card__btn:hover {
       border-color: #fff;
       color: #fff; }
 
@@ -2670,6 +2698,9 @@ table {
   @media (min-width: 61.25em) {
     .hamburger {
       display: none; } }
+
+.pricing {
+  background: #F0F0F0; }
 
 .site-section_type_services {
   background: #e4fdf9; }
@@ -2767,21 +2798,19 @@ table {
   .services-list__item {
     min-width: 300px;
     margin-bottom: 45px; }
-    .services-list__item .services-list-item__inner {
-      background: #fff;
-      padding: 58px 30px; }
-    .services-list__item:hover .services-list-item__inner {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
-      background-color: #00897b; }
-    .services-list__item:hover g {
-      fill: red; }
-    .services-list__item:hover .services-list__title,
-    .services-list__item:hover .services-list__desc {
+
+.services-card {
+  background: #fff;
+  padding: 58px 30px; }
+  .services-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    background-color: #00897b; }
+    .services-card:hover__title, .services-card:hover__desc {
       color: #fff; }
-  .services-list__img {
+  .services-card__img {
     display: block;
     margin: 0 auto; }
-  .services-list__title {
+  .services-card__title {
     color: #212121;
     font-size: 20px;
     font-size: 1.33333rem;
@@ -2790,7 +2819,7 @@ table {
     letter-spacing: 1px;
     text-align: center;
     margin: 38px 0 19px; }
-  .services-list__desc {
+  .services-card__desc {
     margin: 0 auto 44px;
     text-align: center;
     color: #212121;
@@ -2802,25 +2831,28 @@ table {
     letter-spacing: 0.75px; }
 
 .works__btn-group {
-  text-align: center; }
-  .works__btn-group .button {
-    margin-left: 0px; }
-    .works__btn-group .button:first-child {
-      margin-left: 0; }
-    @media (min-width: 46.25em) {
-      .works__btn-group .button {
-        margin-left: 20px; } }
+  text-align: center;
+  margin-bottom: 60px; }
+  @media (min-width: 46.25em) {
+    .works__btn-group {
+      margin-bottom: 120px; } }
+
+.works__top-btn {
+  margin-left: 0px; }
+  .works__top-btn:first-child {
+    margin-left: 0; }
+  @media (min-width: 46.25em) {
+    .works__top-btn {
+      margin-left: 20px; } }
 
 .works__btn-bottom {
   text-align: center; }
 
 .works-list {
   justify-content: center;
-  margin-top: 60px;
   margin-bottom: 30px; }
   @media (min-width: 46.25em) {
     .works-list {
-      margin-top: 120px;
       margin-bottom: 90px; } }
   .works-list__item {
     min-width: 300px;
@@ -2836,16 +2868,6 @@ table {
     justify-content: center;
     transition: all .3s;
     position: relative; }
-    .works-list__link::after {
-      position: absolute;
-      left: 0;
-      top: 0;
-      content: '';
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      background: rgba(0, 0, 0, 0.4);
-      transition: all .3s; }
     .works-list__link:hover .works-list__title,
     .works-list__link:hover .works-list__desc {
       display: block; }
@@ -2873,6 +2895,88 @@ table {
     letter-spacing: 0.75px;
     display: none;
     padding-top: 50px; }
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: -27px; }
+  @media (min-width: 61.25em) {
+    .hamburger {
+      display: none; } }
+
+.pricing-card {
+  background: #fff;
+  padding-bottom: 60px; }
+  .pricing-card__header {
+    background: #3949ab;
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 60px; }
+    .pricing-card__header::after {
+      background: #fff;
+      bottom: -100px;
+      transform: skewY(-7.5deg);
+      transform-origin: 0;
+      content: '';
+      display: block;
+      height: 100px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      -webkit-backface-visibility: hidden; }
+  .pricing-card__title {
+    color: #fff;
+    font-size: 25px;
+    font-size: 1.66667rem;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: 1.25px;
+    text-align: center; }
+  .pricing-card__sum {
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+    font-size: 1.13333rem;
+    line-height: 1.3;
+    letter-spacing: 0.85px;
+    text-align: center; }
+  .pricing-card__number {
+    font-weight: 400;
+    font-size: 50px;
+    font-size: 3.33333rem;
+    line-height: 1.3;
+    letter-spacing: 2.5px; }
+    .pricing-card__number > sup {
+      font-weight: 400;
+      font-size: 25px;
+      font-size: 1.66667rem;
+      line-height: 1.3;
+      letter-spacing: 1.25px;
+      vertical-align: middle; }
+  .pricing-card__btn-bottom {
+    text-align: center; }
+
+.pricing-list {
+  justify-content: center; }
+  .pricing-list__item {
+    min-width: 300px;
+    margin-bottom: 45px; }
+
+.list-pricing-card {
+  margin-bottom: 60px; }
+  .list-pricing-card__item {
+    color: #212121;
+    font-weight: 300;
+    font-size: 17px;
+    font-size: 1.13333rem;
+    line-height: 1.3;
+    letter-spacing: 0.85px;
+    padding: 25px 0px 7px;
+    text-align: center; }
+    .list-pricing-card__item > span {
+      border-bottom: 1px solid #212121;
+      padding: 0px 20px 7px; }
 
 /* ==========================================================================
    #CLEARFIX
