@@ -2687,6 +2687,9 @@ table {
     .hamburger {
       display: none; } }
 
+.pricing {
+  background: #F0F0F0; }
+
 .site-section_type_services {
   background: #e4fdf9; }
 
@@ -2888,6 +2891,26 @@ table {
   @media (min-width: 61.25em) {
     .hamburger {
       display: none; } }
+
+.pricing-card__header {
+  background: #3949ab;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 150px; }
+  .pricing-card__header::after {
+    background: #fff;
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+    transform: skewY(-7.5deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    -webkit-backface-visibility: hidden; }
 
 /* ==========================================================================
    #CLEARFIX
