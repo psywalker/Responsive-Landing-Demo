@@ -1,0 +1,8 @@
+.blog-list {
+  justify-content: center;
+  margin-bottom: 125px;
+  &__item {
+    min-width: 350px;
+    margin-bottom: 45px;
+  }
+}

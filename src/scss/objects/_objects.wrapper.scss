@@ -11,7 +11,17 @@ $inuit-wrapper-width: 1200px !default;
 @if (type-of($inuit-wrapper-width) != number) {
   @error "`#{$inuit-wrapper-width}` needs to be a number.";
 }
+.site-section_bg_turquoise {
+  background-color: #e4fdf9;
+}
 
+.site-section_bg_gray {
+  background-color: #eee;
+}
+
+.site-section_bg_black {
+  background-color: black;
+}
 .o-wrapper {
   @include inuit-clearfix();
   padding-right: $inuit-global-spacing-unit;
