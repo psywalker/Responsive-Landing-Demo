@@ -1,6 +1,7 @@
 .search {
     position: relative;
     margin-left: 28px;
+    margin-bottom: -7px;
     display: flex;
     &__input {
       position: absolute;
@@ -23,8 +24,8 @@
       background: none;
       &:before {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 2px;
+        top: 4px;
 
       }
     }
