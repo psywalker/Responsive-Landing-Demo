@@ -2748,7 +2748,6 @@ table {
 .search {
   position: relative;
   margin-left: 28px;
-  margin-bottom: -7px;
   display: flex; }
   .search__input {
     position: absolute;
