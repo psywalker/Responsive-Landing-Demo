@@ -1,7 +1,6 @@
 .services-list {
-  justify-content: center;
+  @extend .list-default1;
   &__item {
-    min-width: 350px;
-    margin-bottom: 45px;
+    @extend .list-default1__item;
   }
 }

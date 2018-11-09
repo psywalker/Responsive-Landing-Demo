@@ -8,22 +8,22 @@
   text-decoration: none;
   letter-spacing: 1px;
   border: 1px solid #fff;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
   white-space: nowrap;
   @include inuit-font-size(15px);
   padding: 20px 36px;
   margin-bottom: 10px;
   cursor: pointer;
   &:hover {
-    background-color: #00897b;
-    border-color: #00897b;
+    background-color: $color-teal;
+    border-color: $color-teal;
   }
   @include mq($from: tablet) {
     padding: 28px 46px;
     @include inuit-font-size(20px);
     width: auto;
   }
-  &.button_size_big {
+  &.button--size-large {
     width: calc(100% - 40px);
     @include mq($from: tablet) {
       padding: 28px 46px;
@@ -31,41 +31,41 @@
       width: auto;
     }
   }
-  &.button_type_black {
-    border-color: $inuit-color;
-    color: $inuit-color;
+  &.button--type-black {
+    border-color: $color-mine-shaft;
+    color: $color-mine-shaft;
   }
-  &.button_type_green {
-    border: 2px solid #00897b;
-    color: $inuit-color;
+  &.button--type-green {
+    border: 2px solid $color-teal;
+    color: $color-mine-shaft;
     background: none;
     
     &:hover {
-      background-color: #00897b;
+      background-color: $color-teal;
       color: #fff;
     }
   }
-  &.button_type_green2 {
-    border: 2px solid #00897b;
-    background-color: #00897b;
+  &.button--type-green2 {
+    border: 2px solid $color-teal;
+    background-color: $color-teal;
     color: #fff;
     padding: 15px 60px;
     &:hover {
-      color: $inuit-color;
+      color: $color-mine-shaft;
       background: none;
     }
   }
-  &.button_type_green3 {
-    border: 2px solid #00897b;
-    background-color: #00897b;
+  &.button--type-green3 {
+    border: 2px solid $color-teal;
+    background-color: $color-teal;
     color: #fff;
     padding: 15px 20px;
     &:hover {
-      color: $inuit-color;
+      color: $color-mine-shaft;
       background: none;
     }
   }
-  &.button_size_small {
+  &.button--size-small {
     @include inuit-font-size(20px);
     font-weight: 400;
     line-height: 22px;
@@ -82,7 +82,7 @@
     padding: 10px 0;
     text-align: center;
     margin: 0 auto;
-    color: $inuit-color;
+    color: $color-mine-shaft;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;

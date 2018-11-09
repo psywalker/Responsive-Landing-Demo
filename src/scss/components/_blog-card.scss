@@ -1,14 +1,14 @@
 .blog-card {
   &__title {
     display: block;
-    color: $inuit-color;
+    color: $color-mine-shaft;
     @include inuit-font-size(25px, 1.3);
     font-weight: 400;
     letter-spacing: 1.25px;
     text-decoration: none;
     margin: 20px 0 26px;
     &:hover {
-      color: #00897b;
+      color: $color-teal;
     }
   }
    &__meta-info {
@@ -17,7 +17,7 @@
    }
 
    &__text {
-     color: $inuit-color;
+     color: $color-mine-shaft;
      @include inuit-font-size(15px, 1.3);
      font-weight: 400;
      letter-spacing: 0.75px;

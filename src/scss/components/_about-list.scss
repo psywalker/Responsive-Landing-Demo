@@ -1,15 +1,14 @@
 .about-list {
-    justify-content: center;
+    @extend .list-default1;
     &__item {
-        min-width: 350px;
-        margin-bottom: 45px;
+        @extend .list-default1__item;
     }
     &__img {
         display: block;
         margin: 0 auto;
     }
     &__title {
-        color: $inuit-color;
+        color: $color-mine-shaft;
         @include inuit-font-size(20px);
         font-weight: 400;
         letter-spacing: 1px;
@@ -20,7 +19,7 @@
         max-width: 254px;
         margin: 0 auto;
         text-align: center;
-        color: $inuit-color;
+        color: $color-mine-shaft;
         @include inuit-font-size(15px);
         font-weight: 400;
         line-height: 22px;

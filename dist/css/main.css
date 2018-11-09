@@ -80,6 +80,7 @@ body {
     tablet:  740px,
     desktop: 980px,
     wide:    1300px
+
 ); */
 /*!
  * Hamburgers
@@ -2366,10 +2367,17 @@ table {
   height: 100%;
   opacity: 0;
   background: rgba(0, 0, 0, 0.4);
-  transition: all .3s; }
+  transition: all .3s ease-in-out; }
 
 .o-overlay:hover {
   opacity: 1; }
+
+.list-default1, .about-list, .services-list, .pricing-list, .team-list {
+  justify-content: center; }
+
+.list-default1__item, .about-list__item, .services-list__item, .pricing-list__item, .team-list__item {
+  min-width: 300px;
+  margin-bottom: 45px; }
 
 /* ==========================================================================
    #BUTTONS
@@ -2567,7 +2575,7 @@ table {
   text-decoration: none;
   letter-spacing: 1px;
   border: 1px solid #fff;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
   white-space: nowrap;
   font-size: 15px;
   font-size: 1rem;
@@ -2585,42 +2593,42 @@ table {
       font-size: 1.33333rem;
       line-height: 1.5;
       width: auto; } }
-  .button.button_size_big {
+  .button.button--size-large {
     width: calc(100% - 40px); }
     @media (min-width: 46.25em) {
-      .button.button_size_big {
+      .button.button--size-large {
         padding: 28px 46px;
         font-size: 20px;
         font-size: 1.33333rem;
         line-height: 1.5;
         width: auto; } }
-  .button.button_type_black {
+  .button.button--type-black {
     border-color: #212121;
     color: #212121; }
-  .button.button_type_green {
+  .button.button--type-green {
     border: 2px solid #00897b;
     color: #212121;
     background: none; }
-    .button.button_type_green:hover {
+    .button.button--type-green:hover {
       background-color: #00897b;
       color: #fff; }
-  .button.button_type_green2 {
+  .button.button--type-green2 {
     border: 2px solid #00897b;
     background-color: #00897b;
     color: #fff;
     padding: 15px 60px; }
-    .button.button_type_green2:hover {
+    .button.button--type-green2:hover {
       color: #212121;
       background: none; }
-  .button.button_type_green3 {
+  .button.button--type-green3 {
     border: 2px solid #00897b;
     background-color: #00897b;
     color: #fff;
     padding: 15px 20px; }
-    .button.button_type_green3:hover {
+    .button.button--type-green3:hover {
       color: #212121;
       background: none; }
-  .button.button_size_small {
+  .button.button--size-small {
     font-size: 20px;
     font-size: 1.33333rem;
     line-height: 1.5;
@@ -2657,24 +2665,32 @@ table {
     display: block; }
 
 .nav {
-  position: relative; }
+  position: relative;
+  width: 100%; }
+  @media (min-width: 61.25em) {
+    .nav {
+      width: auto; } }
   .nav-list {
     display: none;
     background: #fff;
-    padding: 10px; }
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%; }
     @media (min-width: 61.25em) {
       .nav-list {
         display: flex;
         background: none;
-        padding: 0px; } }
+        padding: 0px;
+        width: auto; } }
     .nav-list_state-active {
       position: absolute;
       top: 50px;
-      left: -100px;
+      right: -67px;
+      width: 100vw;
       display: block; }
     .nav-list__item {
       background: #fff;
-      width: 130px; }
+      width: 100%; }
       @media (min-width: 61.25em) {
         .nav-list__item {
           margin-left: 28px;
@@ -2693,20 +2709,20 @@ table {
       font-weight: 400;
       line-height: 22px;
       letter-spacing: 1px;
-      text-decoration: none; }
+      text-decoration: none;
+      display: block;
+      height: 24px;
+      margin-left: 20px; }
       .nav-list__link:hover {
         text-decoration: underline; }
       @media (min-width: 20em) and (max-width: 61.24em) {
         .nav-list__link {
           color: #212121; } }
-
-.hamburger {
-  position: absolute;
-  right: 0;
-  top: -27px; }
-  @media (min-width: 61.25em) {
-    .hamburger {
-      display: none; } }
+      @media (min-width: 61.25em) {
+        .nav-list__link {
+          display: inline;
+          height: auto;
+          margin-left: 0; } }
 
 .site-section-wrapper {
   margin: 0 auto;
@@ -2771,40 +2787,31 @@ table {
       right: 2px;
       top: 4px; }
 
-.about-list {
-  justify-content: center; }
-  .about-list__item {
-    min-width: 350px;
-    margin-bottom: 45px; }
-  .about-list__img {
-    display: block;
-    margin: 0 auto; }
-  .about-list__title {
-    color: #212121;
-    font-size: 20px;
-    font-size: 1.33333rem;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-align: center;
-    margin: 38px 0 19px; }
-  .about-list__desc {
-    max-width: 254px;
-    margin: 0 auto;
-    text-align: center;
-    color: #212121;
-    font-size: 15px;
-    font-size: 1rem;
-    line-height: 1.6;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0.75px; }
+.about-list__img {
+  display: block;
+  margin: 0 auto; }
 
-.services-list {
-  justify-content: center; }
-  .services-list__item {
-    min-width: 350px;
-    margin-bottom: 45px; }
+.about-list__title {
+  color: #212121;
+  font-size: 20px;
+  font-size: 1.33333rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 38px 0 19px; }
+
+.about-list__desc {
+  max-width: 254px;
+  margin: 0 auto;
+  text-align: center;
+  color: #212121;
+  font-size: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px; }
 
 .services-card {
   background: #fff;
@@ -2873,7 +2880,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3s;
+    transition: all .3s ease-in-out;
     position: relative; }
     .works-list__link:hover .works-list__title,
     .works-list__link:hover .works-list__desc {
@@ -2968,12 +2975,6 @@ table {
   .pricing-card__btn-bottom {
     text-align: center; }
 
-.pricing-list {
-  justify-content: center; }
-  .pricing-list__item {
-    min-width: 350px;
-    margin-bottom: 45px; }
-
 .list-pricing-card {
   margin-bottom: 60px; }
   .list-pricing-card__item {
@@ -2988,12 +2989,6 @@ table {
     .list-pricing-card__item > span {
       border-bottom: 1px solid #212121;
       padding: 0px 20px 7px; }
-
-.team-list {
-  justify-content: center; }
-  .team-list__item {
-    min-width: 350px;
-    margin-bottom: 45px; }
 
 .team-card__autor {
   margin-bottom: 38px; }
@@ -3032,17 +3027,17 @@ table {
     text-decoration: none;
     background-color: #f0f1f1;
     border-radius: 10px;
-    transition: all .3s; }
+    transition: all .3s ease-in-out; }
     .socials__link.fa-stack {
       width: 50px;
       height: 50px;
       line-height: 49px; }
-    .socials__link > i {
+    .socials__link .socials__icon {
       color: #00897b;
       font-size: 34px; }
     .socials__link:hover {
       background: #3949ab; }
-      .socials__link:hover > i {
+      .socials__link:hover .socials__icon {
         color: #fff; }
 
 .blog__btn-bottom {
@@ -3055,7 +3050,7 @@ table {
     .blog-list {
       margin-bottom: 125px; } }
   .blog-list__item {
-    min-width: 350px;
+    min-width: 300px;
     margin-bottom: 45px; }
 
 .blog-card__title {
@@ -3093,8 +3088,9 @@ table {
   margin-left: 40px; }
   .post-meta-info__item:first-child {
     margin-left: 0; }
-  .post-meta-info__item > i {
-    margin-right: 5px; }
+
+.post-meta-info__icon {
+  margin-right: 5px; }
 
 .contact-list {
   justify-content: center; }
@@ -3135,13 +3131,6 @@ table {
 .contact-form__input-group {
   display: flex;
   flex-wrap: wrap; }
-  .contact-form__input-group > input {
-    margin-left: 0px; }
-    @media (min-width: 46.25em) {
-      .contact-form__input-group > input {
-        margin-left: 30px; } }
-    .contact-form__input-group > input:first-child {
-      margin-left: 0; }
 
 .contact-form__input {
   width: 100%;
@@ -3157,10 +3146,14 @@ table {
   letter-spacing: 1px;
   background: #fff;
   border: none;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-left: 0px; }
+  .contact-form__input:first-child {
+    margin-left: 0; }
   @media (min-width: 46.25em) {
     .contact-form__input {
-      width: calc(50% - 15px); } }
+      width: calc(50% - 15px);
+      margin-left: 30px; } }
 
 .contact-form__textarea {
   width: 100%;
@@ -3193,7 +3186,7 @@ table {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
   cursor: pointer; }
   .contact-form__btn:hover {
     background: none;
@@ -4854,9 +4847,7 @@ table {
   /**
    * 1. Black prints faster: http://www.sanbeiji.com/archives/953
    */
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     background: transparent !important;
     color: #000 !important;
     /* [1] */
